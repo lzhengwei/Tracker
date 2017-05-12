@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phonebackground"
+>
+
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="109dip"
+        android:text="老人模式"
+        android:id="@+id/old"
+        android:textSize="25dip"
+        android:textColor="#FFFFFF"
+        android:drawableRight="@drawable/disability"
+        android:background="@drawable/recordstyle"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="109dip"
+        android:text="家人模式"
+        android:id="@+id/family"
+        android:textSize="25dip"
+        android:textColor="#FFFFFF"
+        android:drawableRight="@drawable/wc"
+        android:background="@drawable/walkstyle"
+        android:allowUndo="true"
+        android:layout_above="@+id/old"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="目前模式:"
+        android:textSize="30dip"
+        android:id="@+id/nowmode"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/mode"
+        android:textSize="40dip"
+        android:layout_below="@+id/nowmode"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="109dip"
+        android:text="確定"
+        android:id="@+id/button2"
+        android:textSize="25dip"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/modecheck"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

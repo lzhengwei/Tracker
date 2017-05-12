@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:textSize="22dip"
+        android:textColor="#FFFFFF"
+        android:text="開始測驗"
+        android:gravity="center"
+        android:drawableRight="@drawable/start2"
+        android:id="@+id/button7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/starttest"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:textSize="22dip"
+        android:textColor="#FFFFFF"
+        android:text="顯示結果"
+        android:gravity="center"
+        android:drawableRight="@drawable/calender"
+        android:id="@+id/button8"
+        android:layout_below="@+id/button7"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/button7"
+        android:background="@drawable/showresult" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="運動學資料"
+        android:id="@+id/textView2"
+        android:background="@drawable/sportdata"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spinner5"
+        android:layout_alignEnd="@+id/spinner5" />
+
+    <RelativeLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:layout_below="@+id/button8"
+        android:layout_above="@+id/textView2">
+
+    </RelativeLayout>
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner5"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/falldatainui_2"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+    <Button
+        android:layout_width="138dip"
+        android:layout_height="109dip"
+        android:textColor="#FFFFFF"
+        android:id="@+id/identity"
+        android:drawableTop="@drawable/identity"
+        android:drawableBottom="@drawable/keyboard"
+        android:background="@drawable/badlstyle"
+        android:layout_toRightOf="@+id/set"
+        android:layout_toEndOf="@+id/set"
+        android:layout_alignParentBottom="true"
+        android:singleLine="false"
+        android:layout_below="@+id/condition" />
+
+    <Button
+        android:layout_width="120dip"
+        android:layout_height="109dip"
+        android:id="@+id/position"
+        android:textColor="#FFFFFF"
+        android:drawableTop="@drawable/gpsperson"
+        android:drawableBottom="@drawable/keyboard"
+        android:background="@drawable/iadlstyle"
+        android:singleLine="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/condition" />
+
+    <Button
+        android:layout_width="126dip"
+        android:layout_height="109dip"
+        android:id="@+id/set"
+        android:textColor="#FFFFFF"
+        android:drawableTop="@drawable/setting"
+        android:drawableBottom="@drawable/keyboard"
+        android:background="@drawable/tugstyle"
+        android:layout_toRightOf="@+id/position"
+        android:layout_toEndOf="@+id/position"
+        android:layout_alignParentBottom="true"
+        android:singleLine="false"
+        android:layout_below="@+id/condition" />
+
+    <Button
+        android:layout_width="126dip"
+        android:layout_height="109dip"
+        android:id="@+id/set1"
+        android:textColor="#FFFFFF"
+        android:textSize="25dip"
+        android:background="@drawable/tugstyle"
+        android:singleLine="false"
+        android:text="設定模式"
+        android:layout_alignTop="@+id/position1"
+        android:layout_toRightOf="@+id/position"
+        android:layout_toEndOf="@+id/position" />
+
+    <Button
+        android:layout_width="138dip"
+        android:layout_height="109dip"
+        android:textColor="#FFFFFF"
+        android:id="@+id/identity1"
+        android:textSize="25dip"
+        android:background="@drawable/badlstyle"
+        android:singleLine="false"
+        android:text="個人資料"
+        android:layout_alignTop="@+id/set1"
+        android:layout_toRightOf="@+id/set"
+        android:layout_toEndOf="@+id/set"
+        android:layout_alignBottom="@+id/set1" />
+
+    <Button
+        android:layout_width="138dip"
+        android:layout_height="109dip"
+        android:textColor="#FFFFFF"
+        android:id="@+id/condition"
+        android:textSize="25dip"
+        android:singleLine="false"
+        android:text="目前狀態:安全"
+        android:drawableLeft="@drawable/condition"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="120dip"
+        android:layout_height="109dip"
+        android:id="@+id/position1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/iadlstyle"
+        android:textSize="25dip"
+        android:singleLine="false"
+        android:text="定位查詢"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

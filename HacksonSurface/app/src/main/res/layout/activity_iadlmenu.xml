@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.iadlmenu.IADLmenu">
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="120dip"
+        android:text="IADL問卷"
+        android:textSize="24dip"
+        android:id="@+id/question"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/questionstyle"
+        android:drawableRight="@drawable/question"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="120dip"
+        android:text="電話測驗"
+        android:textSize="24dip"
+        android:id="@+id/phone"
+        android:background="@drawable/phonestyle"
+        android:drawableRight="@drawable/phone"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/question"
+        android:layout_alignEnd="@+id/question" />
+
+    <Button
+        android:layout_width="200dip"
+        android:layout_height="120dip"
+        android:text="服藥紀錄"
+        android:textSize="24dip"
+        android:id="@+id/medicine"
+        android:background="@drawable/medicinestyle"
+        android:drawableRight="@drawable/medicine"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/phone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/phone"
+        android:layout_alignEnd="@+id/phone" />
+</RelativeLayout>

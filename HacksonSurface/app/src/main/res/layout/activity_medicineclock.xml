@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonRead"
+        android:id="@+id/linearLayout"
+        android:background="#e0e0e3">
+
+        <TextView android:text="" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rowstyle"
+            android:id="@+id/textview1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:background="@drawable/rowstyle"
+            android:layout_below="@+id/textview1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+             />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set_Relax"
+        android:background="@drawable/mdcbuttonstyle"
+        android:id="@+id/buttonRelax"
+        android:layout_marginTop="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set_Read"
+        android:background="@drawable/mdcbuttonstyle"
+        android:id="@+id/buttonRead"
+        android:layout_alignTop="@+id/buttonRelax"
+        android:layout_toRightOf="@+id/buttonRelax"
+        android:layout_toEndOf="@+id/buttonRelax" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自訂鬧鐘"
+        android:background="@drawable/mdcbuttonstyle"
+        android:id="@+id/buttoncount"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:choiceMode="singleChoice"
+        android:divider="#19060b"
+        android:dividerHeight="5dp"
+        android:background="@drawable/list_view"
+        android:layout_below="@+id/buttonRelax"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:foregroundGravity="center_vertical" />
+
+</RelativeLayout>
